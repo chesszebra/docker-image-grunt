@@ -3,6 +3,13 @@ FROM chesszebra/node:8.5
 # Run as root
 USER root
 
+# Install Ruby
+RUN apt-get update \
+ && apt-get install -y ruby-full
+
+# Install SASS
+RUN gem install sass --no-user-install
+
 # Install grunt
 RUN npm install -g grunt-cli
 
