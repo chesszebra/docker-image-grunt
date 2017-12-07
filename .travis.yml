@@ -8,7 +8,8 @@ env:
     - secure: "RczIBXtm+2yVGu+ubp7g9m3UCfmPXVfYAaqAU02wPDXED4bSadZ2bmYLVjvCsXMIoIbHbuCrYjh2MpUXqG0czXwEj3aM5Fxxe243bUWuG2bCC723HK0Pu5QlULE4SnDC9J0Fdq9PqoX8qPEi2On3ieR3XSBJ4Vk4fFAPNzQlyTqbYX5CG3xfgVSevlUxQOoBJ5C/5rQNR+qMdnpEvnR9am3GMlHBmCxuZ1UKhzLbXvQQGbbGsJV/TrmMizeEeQi8QHrGI7zSaqzVORJF5Sg+BF2N3cVcMXIJX1S+Sy4aw7ZHoMV1zGzb2ehpqRwYVPBuado57ZLv0oneGQ5MD5J6Opa4qJrEiS5g4kWURXKuFwB3HUbfD/4DhdtVS+PTntBzdz+kS6XqzQoVDTe3IUAJTpQTV2yVLea3s2ljKMzyt+i/onTGomO1eRtuaR+sc27qBT9uaSHQ33yvLje5kBWagLmI4ogJx84O2S68B3pXgLAK5U8tXbPutYJmfrNl/ANNmifhYov2PIzNRLa7b7hnQZog0jpjyR1Ae7oOCqsXlBeiAWAs0ZXXh4d5QGDZ90QX43/ypO8lcbvOGikLyzGhXzOxbnDdu0WoxGeKsdzcxlbs5DkAD5UuBwI71tGcPmw7jKcn+PrT1PlX+yV3Vb5rnfKbZtPWysIFc7cqIXlccMA="
   matrix:
     - VERSION=node-8.5
-    - VERSION=latest VERSION_ALIAS=node-8.5
+    - VERSION=node-9.1
+    - VERSION=latest VERSION_ALIAS=node-9.1
 
 before_script:
   - if [[ "$VERSION" != "latest" ]]; then cd "src/$VERSION"; fi
